@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.logo img{
+    width: 140px;
+    height: auto;
+}
+.navlist{
+    display: flex;
+}
+.navlist li{
+    position: relative;
+}
+.navlist a{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    padding: 10px 20px;
+}
+.navlist a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -3px;
+    background-color: #444444;
+    left: 0;
+    transition: .42s;
+}
+.navlist a:hover::after{
+    width: 100%;
+}
+
+section{
+    padding: 0 12%;
+}
+.home-text{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+.image img{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+}
+.service{
+    background-image: url(image/bg1.png);
+    width: 100%;
+    padding: 100px 0;
+}
+.title h2{
+    color:  gray;
+    font-size: 50px;
+     width: 100%;
+     margin-bottom: 30px auto;
+     text-align: center;
+     margin-top: 15px;
+}
+.title h2 span{
+    color:  #f46530;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 300px;
+    width: 290px;
+    padding: 20px 35px;
+    background: ;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid gray;
+}
+.card i{
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    color:  #f46530;
+}
+.card h5{
+    color: black;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.pra p{
+    color: black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+.pra p a{
+    background-color: gray;
+    color: white;
+    border: 2px solid gray;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+}
+.pra p a:hover{
+    background-color: #696969;
+    border: 2px solid gray;
+    cursor: pointer;
+
+}
